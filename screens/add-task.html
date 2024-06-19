@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task List | Crear</title>
+        <link rel="icon" href="../assets/img/wepik-export-20231217164916QLAx.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,100;1,9..40,300&family=Kanit:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@200;300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="../assets/css/base/base.css">
+        <link rel="stylesheet" href="../assets/css/components/header.css">
+        <link rel="stylesheet" href="../assets/css/components/card.css">
+        <link rel="stylesheet" href="../assets/css/create_task.css">
+        <link rel="stylesheet" href="../assets/css/components/inputs.css">
+        <link rel="stylesheet" href="../assets/css/components/button.css">
+        
+
+    </head>
+    <body>
+        <header class="header container">
+            <img 
+            src="../assets/img/wepik-export-20231217164916QLAx.png" 
+            alt="Logotipo TaskList"
+            class="header_logo"
+            />
+
+            <nav>
+                <ul class="header_list-nav">
+                    <li class="header_link">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="header_link">
+                        <a href="tasks.html">Tareas</a>
+                    </li>
+                    <li class="header_link">
+                        <a href="log_in.html">Usuario</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container flex flex--center flex--column">
+            <section class="card create">
+                <h1 class="card_title">Nueva Tarea</h1>
+                <form class="flex flex--column" data-form>
+                    <div class="input-container">
+                        <input
+                        name="task"
+                        id="task"
+                        class="input"
+                        type="text"
+                        placeholder="Tarea"
+                        required
+                        data-tarea
+                        />
+                        <label for="task" class="input-label">Tarea</label>
+                        <span class="input-message-error">Este campo es requerido</span>
+                    </div>
+                    <div class="input-container">
+                        <input 
+                        name="description"
+                        id="description"
+                        class="input"
+                        type="text"
+                        placeholder="Descripción"
+                        required
+                        data-description
+                        />
+                        <label for="description" class="input-label">Descripción</label>
+                        <span class="input-message-error">Este campo es requerido</span>
+                    </div>
+                    <button type="submit" class="button">Crear</button>
+                </form>
+            </section>
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--SCRPTS CONTROLLER-->
+
+    </body>
+</html>

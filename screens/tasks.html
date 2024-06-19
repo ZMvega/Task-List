@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task List</title>
+        <link rel="icon" href="../assets/img/wepik-export-20231217164916QLAx.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,100;1,9..40,300&family=Kanit:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@200;300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+        <!--css-->
+        <link rel="stylesheet" href="../assets/css/base/base.css">
+        <link rel="stylesheet" href="../assets/css/index.css">
+        <link rel="stylesheet" href="../assets/css/components/header.css">
+        <link rel="stylesheet" href="../assets/css/components/table.css">
+        <link rel="stylesheet" href="../assets/css/components/button.css">
+        <link rel="stylesheet" href="../assets/css/components/modal.css">
+        <link rel="stylesheet" href="../assets/css/task_list.css">
+
+    </head>
+    <body>
+        <header class="header container">
+            <img 
+            src="../assets/img/wepik-export-20231217164916QLAx.png" 
+            alt="Logotipo TaskList"
+            class="header_logo"
+            />
+            <nav>
+                <ul class="header_list-nav">
+                    <li class="header_link"><a href="index.html">Inicio</a></li>
+                    <li class="header_link"><a href="tasks.html">Tareas</a></li>
+                    <li class="header_link">
+                        <a href="log_in.html">Usuario</a>
+                    </li>
+                    <!--<li class="header-link"><a href="#">..</a></li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <main class="task-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="table_column--task">Tarea</th>
+                        <th class="table_column--description">Descripción</th>
+                        <th class="table_column--create table_aling--right">
+                            <a 
+                                href="./add-task.html"
+                                class="simple-button simple-button--add">Nueva Tarea</a
+                            >
+                        </th>
+                    </tr>
+                </thead>
+                <tbody data-table>
+
+                </tbody>
+            </table>
+
+            <div class="modal-container modal--close">
+                <article class="modal">
+                    <h2 class="modal_title">Eliminar</h2>
+                    <button class="modal_close">X</button>
+                    <p class="modal_text">¿Deseas continuar?</p>
+                    <div class="modal_button-container">
+                        <button class="modal_button modal_button--confirm">Eliminar</button>
+                        <button class="modal_button">No eliminar</button>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <script type="module" src="../controllers/task_controller.js"></script>
+    </body>
+</html>

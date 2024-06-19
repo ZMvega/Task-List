@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task List | Registrar Usuario</title>
+        <link rel="icon" href="../assets/img/wepik-export-20231217164916QLAx.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,100;1,9..40,300&family=Kanit:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@200;300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="../assets/css/base/base.css">
+        <link rel="stylesheet" href="../assets/css/components/header.css">
+        <link rel="stylesheet" href="../assets/css/components/card.css">
+        <link rel="stylesheet" href="../assets/css/create_task.css">
+        <link rel="stylesheet" href="../assets/css/components/inputs.css">
+        <link rel="stylesheet" href="../assets/css/components/button.css">
+        
+
+    </head>
+<body>
+    <header class="header container">
+        <img 
+        src="../assets/img/wepik-export-20231217164916QLAx.png" 
+        alt="Logotipo TaskList"
+        class="header_logo"
+        />
+
+        <nav>
+            <ul class="header_list-nav">
+                <li class="header_link">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="header_link">
+                    <a href="tasks.html">Tareas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--column flex--center">
+        <div class="card-cabecalho">
+            <!--<img src="../assets/img/wepik-export-20231217164916QLAx.png" alt="Logo Task-List" class="registry-header__logo">-->
+            <!--<h1 class="registry-header__title">Task List</h1>-->
+        </div>
+        <section class="card">
+            <h2 class="card_title">Completa tu registro</h2>
+            <form action="./registro_concluido.html" class="formulario flex flex--column">
+                <fieldset>
+                    <legend class="card_subtitle">Información básica</legend>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipe="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipe="email">
+                        <label class="input-label" for="email">Email</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+]).{6,12}$" data-tipe="password">
+                        <label class="input-label" for="password">Contraseña</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="card_subtitle">Información personal</legend>
+                    <div class="input-container">
+                        <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipe="nacimiento">
+                        <label class="input-label" for="birth">Fecha de nacimiento</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" data-tipe="phone" pattern="\d{10}" required maxlength="10" data-tipe="numero">
+                        <label class="input-label" for="phoneNumber">Número telefónico</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <button class="button">Completar Registro</a>
+            </form>
+        </section>
+    </main>
+    <script src="./JS/app.js" type="module"></script>
+</body>
+</html>

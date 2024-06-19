@@ -1,0 +1,10 @@
+.task-container{
+    padding: 0 1rem 0 1rem;
+}
+
+@media(min-width: 1200px) {
+    .task-container {
+        padding-left: calc((100vw - 900px)/2);
+		padding-right: calc((100vw - 900px)/2);
+    }
+}

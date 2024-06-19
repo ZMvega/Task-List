@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task List</title>
+        <link rel="icon" href="../assets/img/wepik-export-20231217164916QLAx.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,100;1,9..40,300&family=Kanit:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@200;300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+        <!--css-->
+        <link rel="stylesheet" href="../assets/css/base/base.css">
+        <link rel="stylesheet" href="../assets/css/index.css">
+        <link rel="stylesheet" href="../assets/css/components/header.css">
+        <link rel="stylesheet" href="../assets/css/components/table.css">
+        <link rel="stylesheet" href="../assets/css/components/button.css">
+        <link rel="stylesheet" href="../assets/css/components/modal.css">
+        <link rel="stylesheet" href="../assets/css/task_list.css">
+        <link rel="stylesheet" href="../assets/css/components/card_index.css">
+
+    </head>
+    <body>
+        <header class="header container">
+            <img 
+            src="../assets/img/wepik-export-20231217164916QLAx.png" 
+            alt="Logotipo TaskList"
+            class="header_logo"
+            />
+            <nav>
+                <ul class="header_list-nav">
+                    <li class="header_link"><a href="index.html">Inicio</a></li>
+                    <li class="header_link"><a href="tasks.html">Tareas</a></li>
+                    <li class="header_link">
+                        <a href="log_in.html">Usuario</a>
+                    </li>
+                    <!--<li class="header-link"><a href="#">..</a></li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container flex flex--center flex--column">
+            <section class="main_content">
+                <div class="card">
+                    <h1 class="card_title">Bienvenido a Task List</h1>
+                    <h2 class="card_text">Entendemos que la vida en la actualidad está llena de responsabilidades y compromisos, por eso proporcionamos una herramienta fácil e intuitiva para organizar todo tipo de tareas, mantener la concentración y mejorar tu productividad.
+                    <br><br>
+                    Nuestro objetivo es ayudarte a gestionar tu tiempo y tus tareas con un formulario sencillo, en cuestión de segundos, asegurando que nada se quede sin que hacer.
+                    <br>
+                    La plataforma está diseñada para ser tu asistente personal en la organización en la organización de tareas y optimización del tiempo.
+                    </h2>
+                </div>
+                
+                <img src="https://media.giphy.com/media/Dwv8Wl7vI1JUuOektL/giphy.gif?cid=ecf05e47u3bqw1v88kmptufgarc64vvbnsyfx56xex8dq5ok&ep=v1_gifs_related&rid=giphy.gif&ct=g" class="main_img">
+            </section>
+            
+        </main>
+
+        <script type="module" src="../controllers/task_controller.js"></script>
+    </body>
+</html>
